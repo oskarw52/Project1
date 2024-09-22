@@ -1,42 +1,70 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+:root {
+  background-color: #00246b;
+  font-family: 'Comic Sans MS';
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+h1 {
+  color: #cadcfc;
+  font-size: 56px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+h2 {
+  font-size: 36px;
+  margin: 0;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h3 {
+  font-size: 32px;
+  margin: 0;
+  margin-bottom: 10px;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.TeamContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.Card {
+  margin: 10px;
+  padding: 10px;
+  height: 400px;
+  width: 350px;
+  background-color: #cadcfc;
+  border-radius: 35px;
+  color: #00246b;
 }
 
-.card {
-  padding: 2em;
+.Card:hover {
+  border: solid 5px white;
 }
 
-.read-the-docs {
-  color: #888;
+.CardContents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 400px;
+  width: 350px;
+}
+
+.Card img {
+  max-width: 330px;
+  max-height: 250px;
+  object-fit: contain;
+}
+
+
+.imageContainer {
+  width: 330px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card a {
+    color: inherit;
+    text-decoration: none; 
+    background: none;     
+    padding: 0;           
+    margin: 0;                 
+    cursor: default;  
 }
